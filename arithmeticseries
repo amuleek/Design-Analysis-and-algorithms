@@ -7,3 +7,12 @@ int main()
  float ele1,ele2;
  float a,d;
  cout<<"PROGRAM TO CALCULATE ARITHMETIC SERIES";
+ cout<<endl<<endl;
+ cout<<"Max number of elements in series is 10.";
+ cout<<endl<<endl;
+ start:
+ cout<<"Enter the position of elements you want to enter (Not greater than 10) : ";
+ cin>>pos1>>pos2;
+ cout<<endl;
+ if(pos1==pos2)
+
