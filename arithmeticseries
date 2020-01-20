@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+ float arr[10];
+ int pos1,pos2;
+ float ele1,ele2;
+ float a,d;
+ cout<<"PROGRAM TO CALCULATE ARITHMETIC SERIES";
