@@ -13,4 +13,10 @@ void merge(int array[], int left, int middle, int right)
 {
  int i, j, k;
  int size1=middle-left+1;
+int size2=right-middle;
+ int L[size1], R[size2];
+ for(i=0; i<size1; i++)
+ {
+ L[i]=array[left+i];
+ }
 
