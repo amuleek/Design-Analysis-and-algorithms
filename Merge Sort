@@ -30,3 +30,10 @@ for(j=0; j<size2; j++)
  {
  if (L[i]<=R[j])
  {
+ array[k]=L[i];
+ i++;
+ }
+ else
+ {
+ array[k]=R[j];
+ j++;
