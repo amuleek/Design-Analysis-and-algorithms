@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+void print_array(int array[], int array_size)
+{
+ int index;
+ for(index=0;index<array_size;index++)
+ {
+ cout<<" "<<array[index];
+ }
