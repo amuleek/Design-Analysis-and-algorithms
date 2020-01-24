@@ -21,5 +21,15 @@ int main()
 			break;
 		}
 	}
+if(c==0)
+	{
+		cout<<"Number not found..!!";
+	}
+	else
+	{
+		cout<<num<<" found at position "<<pos;
+	}
+}
+
 
 
