@@ -19,4 +19,14 @@ int size2=right-middle;
  {
  L[i]=array[left+i];
  }
-
+for(j=0; j<size2; j++)
+ {
+ R[j]=array[middle+1+j];
+ }
+ i=0;
+ j=0;
+ k=left;
+ while (i<size1 && j<size2)
+ {
+ if (L[i]<=R[j])
+ {
