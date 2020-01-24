@@ -61,5 +61,18 @@ void merge_sort(int array[], int left, int right)
  merge_sort(array, left, middle);
  merge_sort(array, middle+1, right);
  merge(array, left, middle, right);
+ }
+}
+int main()
+{
+ int array[] = {9,2,7,4,1,3,5};
+ int array_size = sizeof(array)/sizeof(array[0]);
+ cout<<"Given array is : ";
+ print_array(array, array_size);
+ merge_sort(array, 0, array_size-1);
+ cout<<"Sorted array is : ";
+ print_array(array, array_size);
+ return 0;
+}
 
 
