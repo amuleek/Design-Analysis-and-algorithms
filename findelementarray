@@ -13,4 +13,13 @@ int main()
 	cout<<"Enter the number to be search : ";
 	cin>>num;
 	for(i=0; i<n; i++)
+	{
+		if(arr[i]==num)
+		{
+			c=1;
+			pos=i+1;
+			break;
+		}
+	}
+
 
