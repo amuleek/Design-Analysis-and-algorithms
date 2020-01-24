@@ -37,3 +37,13 @@ for(j=0; j<size2; j++)
  {
  array[k]=R[j];
  j++;
+  }
+ k++;
+ }
+ while (i<size1)
+ {
+ array[k]=L[i];
+ i++;
+ k++;
+ }
+
