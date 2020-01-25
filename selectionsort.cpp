@@ -10,3 +10,12 @@ int main ()
     {
         cout<<myarray[i]<<"\t";
     }
+        for(int i=0;i<10;i++)
+    {
+        pos = findSmallest (myarray,i);
+        temp = myarray[i];
+        myarray[i]=myarray[pos];
+        myarray[pos] = temp;
+        pass++;
+    }
+
