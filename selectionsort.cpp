@@ -26,5 +26,12 @@ int main ()
     cout<<"\nNumber of passes required to sort the array: "<<pass;
     return 0;
 }
+int findSmallest(int myarray[],int i)
+{
+    int ele_small,position,j;
+    ele_small = myarray[i];
+    position = i;
+    for(j=i+1;j<10;j++)
+
 
 
