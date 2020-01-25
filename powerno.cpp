@@ -11,3 +11,17 @@ cout<<"Enter number : ";
  cout<<"Enter power : ";
  cin>>power;
  if (power==0 && number==0)
+   {
+ cout<<"Not Defined";
+ }
+ else if(power==0 && number!=0)
+ {
+ cout<<"Result is : "<<result;
+ }
+ else if(power>0)
+ {
+ for(int i=1;i<=power;i++)
+ {
+ result=number*result;
+ }
+
