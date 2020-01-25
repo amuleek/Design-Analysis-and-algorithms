@@ -189,6 +189,42 @@ int main()
  printf("\n\n\n");
  printf("Enter the Number of Operation you want to perform : ");
  scanf("%d",&choice);
+   printf("\n\n");
+ switch(choice)
+ {
+ case 1:
+ printf("Enter the number you want to insert : ");
+ scanf("%d",&element);
+ insert_at_beginning(element);
+ traverse();
+ wait();
+ break;
+ case 2:
+ printf("Enter the number you want to insert : ");
+ scanf("%d",&element);
+ insert_at_end(element);
+ traverse();
+ wait();
+ break;
+ case 3:
+ printf("Enter the number you want to insert : ");
+ scanf("%d",&element);
+ printf("Enter the position of number : ");
+ scanf("%d",&position);
+ if(position==1)
+ {
+ insert_at_beginning(element);
+ }
+ else if(position==count+1)
+ {
+ insert_at_end(element);
+ }
+ else
+ {
+ insert_in_middle(element,position);
+ }
+ traverse();
+
 
 
 
