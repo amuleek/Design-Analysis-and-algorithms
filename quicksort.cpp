@@ -22,5 +22,10 @@ for (int j = low; j <= high- 1; j++)
             swap(&arr[i], &arr[j]);
         }
     }
+    swap(&arr[i + 1], &arr[high]);
+    return (i + 1);
+}
+
+//quicksort algorithm
 
 
