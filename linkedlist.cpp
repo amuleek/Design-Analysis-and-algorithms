@@ -224,6 +224,41 @@ int main()
  insert_in_middle(element,position);
  }
  traverse();
+ wait();
+ break;
+ case 4:
+ delete_from_beginning();
+ traverse();
+ wait();
+ break;
+ case 5:
+ delete_from_end();
+ traverse();
+ wait();
+ break;
+ case 6:
+ printf("Enter the position of number : ");
+ scanf("%d",&position);
+ if(position==1)
+ {
+ delete_from_beginning();
+ }
+ else if(position==count)
+ {
+ delete_from_end();
+ }
+ else
+ {
+ delete_from_middle(position);
+ }
+ traverse();
+ wait();
+ break;
+ case 7:
+ traverse();
+ wait();
+ break;
+ case 8:
 
 
 
