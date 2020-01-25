@@ -7,3 +7,14 @@ int smallest_pair(int a[], int n)
  {
  if (a[j] < min)
  {
+   secondMin = min;
+ min = a[j];
+ }
+ else if ((a[j] < secondMin) && a[j] != min)
+ {
+ secondMin = a[j];
+ }
+ }
+ return (secondMin + min);
+}
+
