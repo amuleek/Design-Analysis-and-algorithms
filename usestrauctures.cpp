@@ -23,5 +23,13 @@ int main()
  cin>>name;
  s3->name=name;
  cout<<"Enter dob(ddmmyyyy) of three students ";
+ cin>>s1.dob;
+ cin>>s2->dob;
+ cin>>s3->dob;
+ cout<<"Enter sapid of three students ";
+ cin>>s1.sapid;
+ cin>>s2->sapid;
+ cin>>s3->sapid;
+
 
 
