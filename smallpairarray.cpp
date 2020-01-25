@@ -17,4 +17,12 @@ int smallest_pair(int a[], int n)
  }
  return (secondMin + min);
 }
+int main()
+{
+ int arr[] = {43,56,44,1,88,89,62,12};
+ int n = sizeof(arr) / sizeof(arr[0]);
+ cout << "Smallest pair is : " << smallest_pair(arr, n);
+ return 0;
+}
+
 
