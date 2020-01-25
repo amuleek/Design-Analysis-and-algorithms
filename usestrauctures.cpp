@@ -30,6 +30,13 @@ int main()
  cin>>s1.sapid;
  cin>>s2->sapid;
  cin>>s3->sapid;
+  cout<<"Enter score of three students";
+ cin>>s1.score;
+ cin>>s2->score;
+ cin>>s3->score;
+ return 0;
+}
+
 
 
 
