@@ -32,6 +32,15 @@ int findSmallest(int myarray[],int i)
     ele_small = myarray[i];
     position = i;
     for(j=i+1;j<10;j++)
+{
+        if(myarray[j]<ele_small)
+        {
+            ele_small = myarray[j];
+            position=j;
+        }
+    }
+    return position;
+}  
 
 
 
