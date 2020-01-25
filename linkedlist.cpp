@@ -84,5 +84,41 @@ void traverse()
  else
  {
  printf("Elements in Linked List are : ");
+   while(t->next!=NULL)
+ {
+ printf("%d -> ",t->data);
+ t=t->next;
+ }
+ printf("%d",t->data);
+ }
+}
+void delete_from_beginning()
+{
+ struct node *t;
+ if(head==NULL)
+ {
+ printf("Nothing to delete.\nLinked List is empty.");
+ }
+ else
+ {
+ printf("Deleted element is %d\n",head->data);
+ t=head->next;
+ free(head);
+ head=t;
+ count--;
+ }
+}
+void delete_from_end()
+{
+ struct node *t,*end_node;
+ if(head==NULL)
+ {
+ printf("Nothing to delete.\nLinked List is empty.");
+ }
+ else if(head->next==NULL)
+ {
+ printf("Deleted element is %d\n",head->data);
+ free(head);
+
 
 
