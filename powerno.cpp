@@ -24,4 +24,15 @@ cout<<"Enter number : ";
  {
  result=number*result;
  }
-
+ cout<<"Result is : "<<result;
+ }
+ else
+ {
+ for(int i=1;i<=abs(power);i++)
+ {
+ result=result/number;
+ }
+ cout<<"Result is : "<<result;
+ }
+ return 0;
+}
