@@ -119,6 +119,41 @@ void delete_from_end()
  {
  printf("Deleted element is %d\n",head->data);
  free(head);
+ head=NULL;
+ count=0;
+ }
+ else
+ {
+ t=head;
+ while(t->next!=NULL)
+ {
+ end_node=t;
+ t=t->next;
+ }
+ printf("Deleted element is %d\n",t->data);
+ end_node->next=NULL;
+ free(t);
+ count--;
+ }
+}
+void delete_from_middle(int pos)
+{
+ int i=1;
+ struct node *temp,*node;
+ if(pos>count || pos<1)
+ {
+ printf("Element do not exist at such position\n\n");
+ }
+ else
+ {
+ node=head;
+ while(i==pos)
+ {
+ node=node->next;
+ i++;
+ }
+ node=node->next;
+ temp=node->next;
 
 
 
