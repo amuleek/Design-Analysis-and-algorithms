@@ -154,6 +154,42 @@ void delete_from_middle(int pos)
  }
  node=node->next;
  temp=node->next;
+  node->next=temp->next;
+ free(temp);
+ }
+}
+void wait()
+{
+ printf("\n\n");
+ printf("Press ENTER to continue...");
+ getchar();
+ getchar();
+}
+int main()
+{
+ int choice;
+ int element;
+ int position;
+ while(1)
+ {
+ system("clear");
+ printf(" LINKED LIST DATA STRUCTURE");
+ printf("\n");
+ printf("--------------------------------------------------------------------------------");
+ printf("\n\n");
+ printf("List of Operations : 1. Insert at Beginning\n");
+ printf(" 2. Insert at End\n");
+ printf(" 3. Insert in Middle\n");
+ printf(" 4. Delete from Beginning\n");
+ printf(" 5. Delete from End\n");
+ printf(" 6. Delete from Middle\n");
+ printf(" 7. Traverse\n");
+ printf(" 8. Number of Elements\n");
+ printf(" 0. Exit\n");
+ printf("\n\n\n");
+ printf("Enter the Number of Operation you want to perform : ");
+ scanf("%d",&choice);
+
 
 
 
