@@ -259,6 +259,22 @@ int main()
  wait();
  break;
  case 8:
+    printf("Number of elements in linked list are : %d",count);
+ wait();
+ break;
+ case 0:
+ wait();
+ exit(0);
+ break;
+ default:
+ printf("Wrong input....");
+ printf("\n");
+ wait();
+ }
+ }
+ return 0;
+}
+
 
 
 
