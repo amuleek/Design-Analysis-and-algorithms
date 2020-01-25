@@ -35,6 +35,19 @@ void quickSort(int arr[], int low, int high)
         int pivot = partition(arr, low, high);
 
         //sort the sub arrays independently
+                quickSort(arr, low, pivot - 1);
+        quickSort(arr, pivot + 1, high);
+    }
+}
+
+void displayArray(int arr[], int size)
+{
+    int i;
+    for (i=0; i < size; i++)
+        cout<<arr[i]<<"\t";
+
+}
+
 
 
 
