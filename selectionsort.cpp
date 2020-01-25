@@ -18,4 +18,13 @@ int main ()
         myarray[pos] = temp;
         pass++;
     }
+        cout<<"\n Sorted list of elements is\n";
+    for(int i=0;i<10;i++)
+    {
+        cout<<myarray[i]<<"\t";
+    }
+    cout<<"\nNumber of passes required to sort the array: "<<pass;
+    return 0;
+}
+
 
