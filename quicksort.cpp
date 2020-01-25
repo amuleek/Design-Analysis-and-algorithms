@@ -27,5 +27,14 @@ for (int j = low; j <= high- 1; j++)
 }
 
 //quicksort algorithm
+void quickSort(int arr[], int low, int high)
+{
+    if (low < high)
+    {
+        //partition the array
+        int pivot = partition(arr, low, high);
+
+        //sort the sub arrays independently
+
 
 
