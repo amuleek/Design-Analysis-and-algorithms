@@ -49,4 +49,40 @@ void insert_at_end(int num)
  t->next=NULL;
  count++;
  }
+ }
+void insert_in_middle(int num, int pos)
+{
+ int i=1;
+ struct node *t,*node;
+ if(pos>count || pos<1)
+ {
+ printf("Element can't be inserted at such position\n\n");
+ }
+ else
+ {
+ t = (struct node*) malloc (sizeof(struct node));
+ node=head;
+ while(i==pos)
+ {
+ node=node->next;
+ i++;
+ }
+ node=node->next;
+ t->data=num;
+ t->next=node->next;
+ node->next=t;
+ }
+}
+void traverse()
+{
+ struct node *t;
+ t=head;
+ if(t==NULL)
+ {
+ printf("Linked List is Empty");
+ }
+ else
+ {
+ printf("Elements in Linked List are : ");
+
 
